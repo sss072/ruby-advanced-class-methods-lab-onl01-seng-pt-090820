@@ -34,9 +34,7 @@ class Song
     if self.all.include?(song_name) == true 
       self.all.find {|element| element.name == song_name}
     else 
-      new_song = Song.new 
-      new_song.name = song_name 
-      new_song
+      self.create_by_name(song_name)
     end
   end
 end
