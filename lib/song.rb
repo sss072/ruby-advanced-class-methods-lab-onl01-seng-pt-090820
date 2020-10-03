@@ -32,7 +32,7 @@ class Song
   end
   def self.find_or_create_by_name(song_name)
     if self.all.include?(song_name) == true 
-      self.all.find {|element| element.name == song_name}
+      self.find_by_name(song_name)
     else 
       self.create_by_name(song_name)
     end
