@@ -16,6 +16,9 @@ class Song
     @@all << new_song 
     new_song
   end 
+  def name 
+    @name 
+  end
   def self.new_by_name(song_name)
     self.all.find {|element| element.name == song_name}
   end
