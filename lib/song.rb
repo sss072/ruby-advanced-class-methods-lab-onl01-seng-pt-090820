@@ -25,6 +25,6 @@ class Song
     new_song = Song.new 
     new_song.name = song_name
     new_song << @@all 
-    
+  end
     
 end
