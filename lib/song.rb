@@ -15,5 +15,5 @@ class Song
     new_song
   end 
   def self.new_by_name(song_name)
-    return 
+    self.all.find  
 end
