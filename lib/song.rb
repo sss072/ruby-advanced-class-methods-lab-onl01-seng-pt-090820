@@ -42,6 +42,6 @@ class Song
     self.all.sort_by {|element| element.name}
   end
   def self.new_from_filename(filename)
-    formatted_file = filename.split(/[- ]/)
+    formatted_file = filename.split(/[\s-]/)
     
 end
