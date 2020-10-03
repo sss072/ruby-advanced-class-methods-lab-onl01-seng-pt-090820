@@ -31,7 +31,7 @@ class Song
     self.all.find {|element| element.name == song_name}
   end
   def self.find_or_create_by_name(song_name)
-    if self.find_by_name(song_name) == true
+    if self.find_by_name(song_name) != nil 
       self.find_by_name(song_name)
       
     else 
